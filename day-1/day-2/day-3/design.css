@@ -60,6 +60,6 @@ ul li:first-child{
     background-color: blueviolet;
 }
 
-ul li:nth :nth-child(odd){
+ul li:nth-child(odd){
     background-color: burlywood;
-};    
+}
