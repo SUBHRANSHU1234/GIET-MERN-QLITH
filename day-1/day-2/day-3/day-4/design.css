@@ -1,0 +1,76 @@
+p[id="paragraph"]{
+    background-color: bisque;
+}
+p{
+    width: 200px;
+}
+p::first-letter{
+    background-color: aquamarine;
+}
+p::first-line{
+    background-color: brown;
+}
+p::selection{
+    background-color: burlywood;
+}
+p::after{
+    content: "after the text";
+}
+p::before{
+    content: "before the text";
+}
+div{
+    width: 200px;
+    background-color: crimson;
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px; */
+    padding: 20px 30px 40px 20px;
+    /* margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px; */
+    margin: 30px 20px;
+    height: 300px;
+    border: 2px solid black;
+    background-image: url("https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=1024x1024&w=is&k=20&c=QaEkKC7lFEBrzzPftMRBVuOZq4FNOnUjOV1VqTmpMfY=");
+    background-position: center;
+    background-size:cover 
+
+}
+
+#block-ele{
+    background-color: brown;
+    display: block;
+}
+
+span{
+    background-color: blue;
+    display: block;
+    width: 300px;
+}
+h1{
+    background-color: blanchedalmond;
+    /* display: inline-block;
+    display: none; */
+    visibility: hidden;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
