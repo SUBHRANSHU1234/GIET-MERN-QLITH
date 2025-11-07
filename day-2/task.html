@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form > div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"],
+        select,
+        input[type="date"],
+        input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Application Form</h1>
+
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of birth:</label>
+            <input type="text" id="dob" name="dob" placeholder="mm / dd / yyyy" pattern="\d{2}/\d{2}/\d{4}" title="Format: mm/dd/yyyy" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" style="width: 50px;" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+        </div>
+
+        <div>
+            <label>Positions Available:</label>
+            
+            <input type="radio" id="juniorDev" name="position" value="junior" required>
+            <label for="juniorDev">Junior Developer</label>
+            
+            <input type="radio" id="midDev" name="position" value="mid">
+            <label for="midDev">Mid-level Developer</label>
+            
+            <input type="radio" id="seniorDev" name="position" value="senior">
+            <label for="seniorDev">Senior Developer</label>
+        </div>
+
+        <div>
+            <label>Programming Languages:</label>
+            
+            <input type="checkbox" id="java" name="languages" value="java">
+            <label for="java">Java</label>
+            
+            <input type="checkbox" id="javascript" name="languages" value="javascript">
+            <label for="javascript">JavaScript</label>
+            
+            <input type="checkbox" id="python" name="languages" value="python">
+            <label for="python">Python</label>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>

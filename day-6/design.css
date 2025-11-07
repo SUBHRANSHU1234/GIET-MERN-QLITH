@@ -1,0 +1,117 @@
+/* .container{
+    width: 700px;
+    height: 500px;
+    margin: 40px auto;
+    border: 2px solid black;
+
+
+}
+
+.item{ */
+    /* float: left; */
+
+
+/* .item1{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    position: absolute;
+    top: 50px;
+} */ */
+
+/* .item2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(25, 183, 183);
+}
+
+/* .item3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(175, 20, 75);
+} */
+
+/* .paragraph{
+    background-color: brown;
+    position: sticky;
+    /* position: fixed; */
+    /* top: 0px;
+    left: 0px;
+} */ */
+nav{
+    width: 100vw;
+    height:70px ;
+    box-shadow:2px 2px 5px black ;
+    display: flex;
+
+}
+
+.nav-logo{
+    width: 30%;
+    background-color:brown ;
+}
+
+.nav-logo p{
+    color: blue;
+    font-size: 25px;
+}
+
+.nav-logo p sapn{
+    color: chartreuse;
+}
+
+ul{
+    width:70% ;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size:20px ;
+    font-weight: 600;
+}
+
+ul li{
+    transition-property: color;
+    transition-duration: 2s;
+     
+}
+
+ul li:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-btn button{
+    padding: 10px 20px;
+    background-color:rgba(red, green, blue, alpha) ;
+    border: none;
+    border-radius:5px ;
+    color: rgb(157, 20, 34);
+}
+
+.nav-btn button:hover{
+    background-color:green;
+    cursor: pointer;
+       
+}
+
+.move{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+}
+
+.move:hover{
+    transform: translate(400px);
+}
